@@ -9,8 +9,8 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.3'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.android.tools.build:gradle:8.6.0'
+//        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -23,7 +23,10 @@ allprojects {
         google()
         jcenter()
         maven { url 'https://jitpack.io' }
-        
+        maven {url "https://repo1.maven.org/maven2/"}
+        // 给 MMKV 用
+        maven {url "https://repo.huaweicloud.com/repository/maven/"}
+        maven {url "https://nexus.pentaho.org/content/groups/omni/"}
     }
 }
 
